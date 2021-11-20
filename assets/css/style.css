@@ -1,3 +1,11 @@
+:root {
+    --primary-color: black;
+    --secondary-color: green;
+    --tertiary-color: rgb(164, 204, 164);
+    --quadiary-color: rgb(13, 44, 13);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +16,14 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /* header start */
+
 header {
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background: rgb(5, 31, 5);
+    background: var(--quadiary-color);
     position:-webkit-sticky;
     position: sticky;
     top: 0;
@@ -49,8 +58,8 @@ header nav ul li a  {
    padding: 10px 15px;
 }
 header nav ul li a:hover {
-    background: green;
-    color: rgb(0, 0, 0);
+    background: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 10px;
     text-shadow: none;
 }
@@ -59,9 +68,10 @@ header nav ul li a:hover {
 
 /* Hero start */
 .hero {
-    background-image: url("./assets/images/72960f5122fb1f3e24259821e060cb4a.jpg");
+    background-color: var(--tertiary-color);
+    /* background-image: url("./assets/images/72960f5122fb1f3e24259821e060cb4a.jpg");
     background-size: cover;
-    background-position: 100%;
+    background-position: 100%; */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -69,8 +79,9 @@ header nav ul li a:hover {
 }
 
 .hero img {
+    display: flex;
     width: 100%;
-    border: 10px solid black;
+    border: 10px solid var(--primary-color);
 }
 /* End of hero */
 
@@ -80,7 +91,7 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     background-color: darkgrey;
-    border-bottom: 5px dotted black;
+    border-bottom: 5px dotted var(--primary-color);
 }
 
 .info-title {
@@ -99,8 +110,8 @@ header nav ul li a:hover {
     align-items: center; 
     background-color: rgb(211, 219, 207);
     flex: 2 70%;
-    border-left: 10px solid black;
-    border-right: 10px solid black;
+    border-left: 10px solid var(--primary-color);
+    border-right: 10px solid var(--primary-color);
 }
 .info-facts ul {
     list-style: none;
@@ -120,18 +131,17 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 50px;
     background-color: rgb(211, 219, 207);
     flex: 2 70%;
-    border-left: 10px solid black;
-    border-right: 10px solid black;
+    border-left: 10px solid var(--primary-color);
+    border-right: 10px solid var(--primary-color);
     height: 100%;
 }
 
 .app, .app-1 {
     position: relative;
-    border: 5px solid black;
-    width: 400px;
+    border: 5px solid var(--primary-color);
+    width: 450px;
     margin: 5px;
 }
 .app:hover, .app-1:hover {
@@ -142,9 +152,9 @@ header nav ul li a:hover {
     position: absolute;
     left: 0; 
     bottom: 50px;
-    background-color: rgb(164, 204, 164);
-    color: rgb(0, 0, 0);
-    border-right: 10px solid rgb(13, 44, 13);
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    border-right: 10px solid var(--quadiary-color);
     height: auto;
     width: auto;
     display: flex;
@@ -165,6 +175,6 @@ header nav ul li a:hover {
 }
 .contact-info ul li:hover {
     background: white;
-    color: green;
+    color: var(--secondary-color);
     text-shadow: none;
 }
