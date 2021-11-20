@@ -69,13 +69,11 @@ header nav ul li a:hover {
 /* Hero start */
 .hero {
     background-color: var(--tertiary-color);
-    /* background-image: url("./assets/images/72960f5122fb1f3e24259821e060cb4a.jpg");
+    background-image: url("./assets/images/72960f5122fb1f3e24259821e060cb4a.jpg");
     background-size: cover;
-    background-position: 100%; */
+    background-position: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    flex-wrap: wrap;
 }
 
 .hero img {
